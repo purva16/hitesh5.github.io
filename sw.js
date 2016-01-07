@@ -7,3 +7,5 @@ if ('serviceWorker' in navigator) {
     console.log('ServiceWorker registration failed: ', err);
   });
 }
+// Include SW cache polyfill
+importScripts("/r3search/js/serviceworker-cache-polyfill.js");
