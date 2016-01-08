@@ -7,9 +7,3 @@ if ('serviceWorker' in navigator) {
     console.log('ServiceWorker registration failed: ', err);
   });
 }
-
-window.addEventListener('beforeinstallprompt', function(e) {
-	console.log('beforeinstallprompt Event fired');
-	e.preventDefault();
-	return false;
-});
