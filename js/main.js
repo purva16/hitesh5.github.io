@@ -6,7 +6,9 @@ if ('serviceWorker' in navigator) {
    		reg.pushManager.subscribe({
             userVisibleOnly: true
         }).then(function(sub) {
-            console.log('endpoint:', sub.endpoint);
+        	var endpointSections = sub.endpoint.split('/');
+        	var subscriptionId = endpointSections[endpointSections.length - 1];
+            console.log('subscriptionId:', subscriptionId);
         });
  	}).catch(function(err) {
    		console.log(':^(', err);
