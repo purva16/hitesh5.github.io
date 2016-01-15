@@ -1,7 +1,7 @@
 'use strict';
 if ('serviceWorker' in navigator) {
 	console.log('Service Worker is supported');
- 	navigator.serviceWorker.register('sw.js').then(function(reg) {
+ 	navigator.serviceWorker.register('https://raw.githubusercontent.com/mayank/hitesh5.github.io/master/sw.js').then(function(reg) {
    		console.log(':^)', reg);
    		reg.pushManager.subscribe({
             userVisibleOnly: true
